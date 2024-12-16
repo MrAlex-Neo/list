@@ -62,7 +62,7 @@ function createObjectElement(objectText, index) {
             div.innerHTML = `<span class="key">${key}:</span> <span class="value">${value}</span>`;
             content.appendChild(div);
         }
-        objectElement.addEventListener('click', () => {
+        header.addEventListener('click', () => {
             content.style.display = content.style.display === 'none' ? 'block' : 'none';
         });
         objectElement.appendChild(content);
